@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Divya Banuka - Personal Portfolio">
+    <meta name="description" content="Divya Banuka - Aspiring Data Analyst and Technology Enthusiast">
     <title>Divya Banuka | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,10 +12,10 @@
 <body>
 
 <header>
-    <nav>
-        <h2>Divya Banuka</h2>
+    <nav class="navbar">
+        <a href="#home" class="logo">Divya <span>Banuka</span></a>
 
-        <ul>
+        <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -26,58 +27,239 @@
 
 <main>
 
-<section id="home">
-    <h1>Hello, I'm Divya Banuka</h1>
-    <p>Aspiring Data Analyst &amp; Technology Enthusiast</p>
-    <a href="#contact">Contact Me</a>
-</section>
+    <!-- HERO -->
+    <section id="home" class="hero">
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a passionate student interested in technology, data analytics,
-        web development and cloud computing. I enjoy learning new skills
-        and building practical projects.
-    </p>
-</section>
+        <div class="hero-content">
 
-<section id="skills">
-    <h2>My Skills</h2>
-    <ul>
-        <li>HTML &amp; CSS</li>
-        <li>Python</li>
-        <li>Data Analytics</li>
-        <li>SQL</li>
-        <li>Cloud Computing</li>
-        <li>Git &amp; GitHub</li>
-    </ul>
-</section>
+            <p class="badge">✦ Open to Opportunities</p>
 
-<section id="projects">
-    <h2>Projects</h2>
+            <h1>
+                Hello, I'm<br>
+                <span>Divya Banuka</span>
+            </h1>
 
-    <article>
-        <h3>Personal Portfolio Website</h3>
-        <p>A responsive portfolio website created using HTML and CSS.</p>
-    </article>
+            <h2>Aspiring Data Analyst &amp; Technology Enthusiast</h2>
 
-    <article>
-        <h3>Data Analytics Project</h3>
-        <p>A project focused on analyzing data and finding useful insights.</p>
-    </article>
-</section>
+            <p class="hero-text">
+                I turn data into insights, build meaningful projects,
+                and love exploring technology to solve real-world problems.
+            </p>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: github.com/divyabanuka</p>
-</section>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">✉ Contact Me</a>
+                <a href="#projects" class="btn secondary">View My Work →</a>
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+            <div class="profile-circle">DB</div>
+            <h3>Keep Learning</h3>
+            <p>Analyze • Learn • Build • Grow</p>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+
+        <p class="section-label">● ABOUT ME</p>
+
+        <div class="about-grid">
+
+            <div>
+                <h2>A little bit about me</h2>
+
+                <p>
+                    I am a passionate student interested in technology,
+                    data analytics, web development and cloud computing.
+                    I enjoy learning new skills, working on real-world
+                    projects and creating solutions that make a positive impact.
+                </p>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <strong>🎓 Student</strong>
+                        <small>Lifelong Learner</small>
+                    </div>
+
+                    <div class="info-card">
+                        <strong>📍 India</strong>
+                        <small>Based in India</small>
+                    </div>
+
+                    <div class="info-card">
+                        <strong>💜 Interests</strong>
+                        <small>Data &amp; Technology</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-card">
+                <span>“</span>
+                <p>
+                    A curious mind and a learning heart
+                    can build an extraordinary future.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+
+        <p class="section-label">● MY SKILLS</p>
+
+        <h2>Tools &amp; Technologies I Work With</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">HTML</div>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">CSS</div>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">PY</div>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">SQL</div>
+                <h3>SQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">DA</div>
+                <h3>Data Analytics</h3>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">☁</div>
+                <h3>Cloud Computing</h3>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">GH</div>
+                <h3>Git &amp; GitHub</h3>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+
+        <p class="section-label">● MY PROJECTS</p>
+
+        <h2>Some of My Work</h2>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+
+                <div class="project-icon">💻</div>
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio website created
+                    using HTML and CSS to showcase my skills and projects.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Responsive Design</span>
+                </div>
+
+                <a href="#home">View Project →</a>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-icon">📊</div>
+
+                <h3>Data Analytics Project</h3>
+
+                <p>
+                    A project focused on analyzing data and finding
+                    useful insights using data analysis techniques.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Data Analysis</span>
+                    <span>Visualization</span>
+                </div>
+
+                <a href="#contact">View Project →</a>
+
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+
+        <p class="section-label">● GET IN TOUCH</p>
+
+        <div class="contact-grid">
+
+            <div>
+                <h2>Let's Connect</h2>
+
+                <p>
+                    I'm always open to new opportunities, collaborations,
+                    or a friendly chat about technology and data.
+                    Feel free to reach out!
+                </p>
+            </div>
+
+            <div class="contact-details">
+
+                <p>📧 <strong>your-email@example.com</strong></p>
+
+                <p>
+                    🔗 <strong>github.com/divyabanuka</strong>
+                </p>
+
+                <p>
+                    💼 <strong>LinkedIn</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
+
 <footer>
-    <p>&copy; 2026 Divya Banuka. All rights reserved.</p>
+    <div>
+        <h3>Divya <span>Banuka</span></h3>
+        <p>Aspiring Data Analyst &amp; Technology Enthusiast</p>
+        <p>© 2026 Divya Banuka. All rights reserved.</p>
+    </div>
+
+    <p>Keep Learning. Keep Growing. 💜</p>
 </footer>
 
 </body>
-</html>
+    </html>
