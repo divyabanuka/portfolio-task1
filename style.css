@@ -362,12 +362,33 @@ footer {
     .hero-stats div {
         min-width: 100px;
         padding: 10px;
+     }
     }
 
-    .skills-grid,
     .projects-grid {
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     }
+    .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.projects-grid {
+    grid-template-columns: 1fr;
+}
+
+.skill-card {
+    padding: 20px;
+}
+
+.skill-card h3 {
+    font-size: 16px;
+}
+
+.skill-card p {
+    font-size: 13px;
+}
+    
 
     .section {
         padding: 65px 18px;
